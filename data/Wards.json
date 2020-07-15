@@ -81,9 +81,8 @@
                 "collapsed": false
             }
         },
-        "mapbox:uiParadigm": "layers",
         "mapbox:decompiler": {
-            "id": "ckcnerkje0kd61iroqja6pgv0",
+            "id": "ckcneo3en2j7x1ipftaqdrr9m",
             "componentVersion": "3.0.0",
             "strata": [
                 {
@@ -113,9 +112,7 @@
                         ["point-of-interest-labels", "poi-labels"],
                         ["transit", "transit-labels"],
                         ["place-labels", "place-labels"],
-                        "census-merged-wards-december-6xhk72",
-                        "parishes-december-2019-ew-b-8nw6y1",
-                        "local-authority-districts-de-afhpgd"
+                        "census-merged-wards-december-6xhk72"
                     ]
                 }
             ],
@@ -168,15 +165,16 @@
                 },
                 "place-labels": {"color-base": "hsl(210, 75%, 93%)"}
             }
-        }
+        },
+        "mapbox:uiParadigm": "layers"
     },
-    "center": [-3.1502297043409726, 52.30828929417075],
-    "zoom": 9.112938292621088,
+    "center": [1.3039208898884453, 51.18466259981119],
+    "zoom": 9.728389840779348,
     "bearing": 0,
     "pitch": 0,
     "sources": {
         "composite": {
-            "url": "mapbox://dandwal.dqfsc2e5,dandwal.d5vkul45,dandwal.5ifd0na0,mapbox.mapbox-streets-v8,mapbox.mapbox-terrain-v2",
+            "url": "mapbox://dandwal.dqfsc2e5,mapbox.mapbox-streets-v8,mapbox.mapbox-terrain-v2",
             "type": "vector"
         }
     },
@@ -4063,56 +4061,13 @@
             "type": "fill",
             "source": "composite",
             "source-layer": "Census_Merged_Wards__December-6xhk72",
-            "layout": {"visibility": "none"},
-            "paint": {
-                "fill-color": "hsla(113, 73%, 36%, 0.55)",
-                "fill-outline-color": "rgb(27 ,27 ,29)",
-                "fill-opacity": [
-                    "case",
-                    ["boolean", ["feature-state", "hover"], false],
-                    1,
-                    0.5
-                ]
-            }
-        },
-        {
-            "id": "parishes-december-2019-ew-b-8nw6y1",
-            "type": "fill",
-            "source": "composite",
-            "source-layer": "Parishes__December_2019__EW_B-8nw6y1",
-            "layout": {"visibility": "none"},
-            "paint": {
-                "fill-color": "hsla(113, 73%, 36%, 0.55)",
-                "fill-outline-color": "rgb(27 ,27 ,29)",
-                "fill-opacity": [
-                    "case",
-                    ["boolean", ["feature-state", "hover"], false],
-                    1,
-                    0.5
-                ]
-            }
-        },
-        {
-            "id": "local-authority-districts-de-afhpgd",
-            "type": "fill",
-            "source": "composite",
-            "source-layer": "Local_Authority_Districts__De-afhpgd",
             "layout": {},
-            "paint": {
-                "fill-color": "hsla(113, 73%, 36%, 0.55)",
-                "fill-outline-color": "rgb(27 ,27 ,29)",
-                "fill-opacity": [
-                    "case",
-                    ["boolean", ["feature-state", "hover"], false],
-                    1,
-                    0.5
-                ]
-            }
+            "paint": {"fill-color": "hsla(103, 56%, 40%, 0.4)"}
         }
     ],
     "created": "2020-07-15T13:36:32.970Z",
     "id": "ckcnerkje0kd61iroqja6pgv0",
-    "modified": "2020-07-15T13:47:29.039Z",
+    "modified": "2020-07-15T13:36:32.970Z",
     "owner": "dandwal",
     "visibility": "private",
     "draft": false

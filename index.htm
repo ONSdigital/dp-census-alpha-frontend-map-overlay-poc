@@ -35,8 +35,10 @@
             <p class="font-weight-bold h4">Selected Boundary: </p>
             <div class="form-row my-2">
                 <div class="col">
-                    <select id="selector" class="form-control form-control-sm">
-                        <option value="local-authorities">Local Authorities</option>
+                    <select id="selector" class="form-control form-control-sm" onchange="changeOverlay(this)">
+                        <option value="Local_Authority_Districts__De-afhpgd">Local Authorities</option>
+                        <option value="Parishes__December_2019__EW_B-8nw6y1">Parishes</option>
+                        <option value="Census_Merged_Wards__December-6xhk72">Wards</option>
                     </select>
                 </div>
             </div>

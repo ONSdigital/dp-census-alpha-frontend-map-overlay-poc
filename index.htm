@@ -1,0 +1,69 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no'/>
+    <title>Map with overlay</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/css/bootstrap.min.css"/>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.css' rel='stylesheet'/>
+    <link rel="stylesheet" href="https://cdn.ons.gov.uk/sixteens/6a9b674/css/main.css">
+    <link rel="stylesheet" href="./styles/app.css">
+</head>
+
+<body>
+<header>
+    <div class="wrapper">
+        <div class="header col-wrap">
+            <div class="col"><a href="http://99.80.12.125/"><img class="logo top-logo"
+                                                                 src="https://cdn.ons.gov.uk/assets/images/ons-logo/v2/ons-logo.svg"
+                                                                 alt="Office for National Statistics"></a><img
+                    class="logo top-logo" src="./assets/Census2021_whiteback.png" alt="Census 2021 logo"><a
+                    href="http://99.80.12.125/dp-census-alpha-frontend-map-boundary-poc/">
+                <div class="restart">Start journey again</div>
+            </a></div>
+        </div>
+    </div>
+    <div class="primary-nav page-title font-size--sm always-show-banner">
+        <div class="wrapper"><p class="govuk-phase-banner__content"><strong
+                class="govuk-tag govuk-phase-banner__content__tag">alpha</strong><span class="govuk-phase-banner__text">This is a Proof-of-Concept prototype</span>
+        </p></div>
+    </div>
+</header>
+<div id="nav" class="container-fluid">
+    <div class="row">
+        <div id="search" class="col-sm-7 col-md-5 col-lg-4 col-xl-3 p-3 mr-auto">
+            <p class="font-weight-bold h4">Selected Boundary: </p>
+            <div class="form-row my-2">
+                <div class="col">
+                    <select id="selector" class="form-control form-control-sm">
+                        <option value="local-authorities">Local Authorities</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="loader" class="justify-content-center" style="display: flex;">
+    <div class="spinner-border text-secondary m-auto" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+</div>
+<div id="map"></div>
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.js'></script>
+<script src='./js/app.js'></script>
+<footer class="footer">
+    <div class="wrapper">
+        <img class="footer-license__img" alt="OGL"
+             src="https://cdn.ons.gov.uk/assets/images/logo-ogl-footer.svg" width="60">
+        <p class="footer-license__text margin-left-sm--0">All content is available under the <a class="icon--hide"
+                                                                                                href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+                                                                                                target="_blank"
+                                                                                                rel="noopener noreferrer">Open
+            Government Licence v3.0</a> <span class="icon icon-external--light-small"></span>, except where otherwise
+            stated
+        </p>
+    </div>
+</footer>
+</body>
+
+</html>

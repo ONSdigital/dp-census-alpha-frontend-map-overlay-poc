@@ -22,7 +22,7 @@
 
 .search-result-item {
     font-size: 21px;
-    padding: 10px 0px 10px 0px;
+    padding: 10px 0 10px 0;
 }
 
 .footer {
@@ -56,7 +56,6 @@
 #results-preview {
     bottom: 7vh;
     float: left;
-    float: right;
     position: absolute;
     background-color: #222222dd;
     color: #eeeeee;
@@ -73,7 +72,6 @@
     position: fixed;
     z-index: 2;
     display: none;
-    overflow: scroll;
 }
 
 .page-container {
@@ -94,10 +92,10 @@
 }
 
 .pagination-list-item {
-    padding-top: 0px;
-    padding-bottom: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .pagination-drop-down {
@@ -111,9 +109,9 @@
     width: 100%;
     bottom: 0;
     z-index: 3;
-    padding-left: 0px;
-    margin-left: 0px;
-    margin-bottom: 0px;
+    padding-left: 0;
+    margin-left: 0;
+    margin-bottom: 0;
 }
 
 .notifications__item.visible {
@@ -126,8 +124,8 @@
 }
 
 .notifications__item {
-    margin-bottom: 0px;
-    margin-left: 0px;
+    margin-bottom: 0;
+    margin-left: 0;
     padding: 24px 160px;
     background-color: #AA354C;
     color: #E7E8E9;
@@ -182,10 +180,7 @@
     font-weight: 700;
     font-size: 21px;
     line-height: 1;
-    padding-top: 5px;
-    padding-right: 8px;
-    padding-bottom: 4px;
-    padding-left: 8px;
+    padding: 5px 8px 4px 8px;
 }
 
 .govuk-phase-banner__text {
@@ -206,7 +201,7 @@
 }
 
 .govuk-link:link {
-    colour: #1d70b8;
+    color: #1d70b8;
 }
 
 @media (max-width: 767px) {
@@ -218,6 +213,30 @@
         font-size: 18px;
     }
 }
+
+.mapboxgl-popup-content {
+    padding: 3px 6px !important;
+}
+
+.widgit-selector {
+    width: 100%;
+    opacity: 1;
+    border-radius: 0;
+    background-image: none;
+    box-sizing: border-box;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 16px;
+    line-height: 1.25;
+    padding: 5px 4px 4px;
+    border: 2px solid #0b0c0c;
+    margin-bottom: 5px;
+    outline-color: #f93;
+}
+.olg-align {
+    vertical-align: baseline;
+}
+
 
 #map {
     height: 78vh;
@@ -242,26 +261,6 @@
     height: 100vh;
     background-color: #22222277;
     z-index: 90;
-}
-
-.mapboxgl-popup-content {
-    padding: 3px 6px !important;
-}
-
-.widgit-selector {
-    width: 100%;
-    opacity: 1;
-    border-radius: 0;
-    background-image: none;
-    box-sizing: border-box;
-    font-weight: 400;
-    text-transform: none;
-    font-size: 16px;
-    line-height: 1.25;
-    padding: 5px 4px 4px;
-    border: 2px solid #0b0c0c;
-    margin-bottom: 5px;
-    outline-color: #f93;
 }
 
 #toggle-results {

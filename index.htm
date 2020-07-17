@@ -29,17 +29,21 @@
         </p></div>
     </div>
 </header>
+<div id="results-list"></div>
 <div id="nav" class="container-fluid">
     <div class="row">
         <div id="search" class="col-sm-7 col-md-5 col-lg-4 col-xl-3 p-3 mr-auto">
+            Note may need to zoom in for some boundary types
             <p class="font-weight-bold h4">Selected Boundary: </p>
             <div class="form-row my-2">
                 <div class="col">
-                    <select id="selector" class="form-control form-control-sm" onchange="changeOverlay(this)">
-                        <option value="Local_Authority_Districts__De-afhpgd">Local Authorities</option>
+                    <select id="selector" class="widgit-selector" onchange="changeOverlay(this)">
+                        <option selected="selected" value="Local_Authority_Districts__De-afhpgd">Local Authorities
+                        </option>
                         <option value="Parishes__December_2019__EW_B-8nw6y1">Parishes</option>
                         <option value="Census_Merged_Wards__December-6xhk72">Wards</option>
                     </select>
+                    <input id="toggle-results" class="btn btn--primary btn--thick btn--focus font-weight-700 font-size--21" type="button" onclick="toggleResults()" value="Toggle Polygon information">
                 </div>
             </div>
         </div>
@@ -51,8 +55,6 @@
     </div>
 </div>
 <div id="map"></div>
-<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.js'></script>
-<script src='./js/app.js'></script>
 <footer class="footer">
     <div class="wrapper">
         <img class="footer-license__img" alt="OGL"
@@ -66,6 +68,8 @@
         </p>
     </div>
 </footer>
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.js'></script>
+<script src='./js/app.js'></script>
 </body>
 
 </html>

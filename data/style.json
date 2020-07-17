@@ -112,10 +112,10 @@
                         ["natural-features", "natural-labels"],
                         ["point-of-interest-labels", "poi-labels"],
                         ["transit", "transit-labels"],
-                        ["place-labels", "place-labels"],
                         "census-merged-wards-december-6xhk72",
                         "parishes-december-2019-ew-b-8nw6y1",
-                        "local-authority-districts-de-afhpgd"
+                        "local-authority-districts-de-afhpgd",
+                        ["place-labels", "place-labels"]
                     ]
                 }
             ],

@@ -175,9 +175,15 @@
     "bearing": 0,
     "pitch": 0,
     "sources": {
-        "composite": {
-            "url": "mapbox://dandwal.dqfsc2e5,dandwal.d5vkul45,dandwal.5ifd0na0,mapbox.mapbox-streets-v8,mapbox.mapbox-terrain-v2",
-            "type": "vector"
+        "openmaptiles": {
+            "type": "vector",
+            "tiles": [
+                "https://cdn.ons.gov.uk/maptiles/osm/v1/{z}/{x}/{y}.pbf"
+            ],
+            "buffer": 0,
+            "minzoom": 0,
+            "maxzoom": 14,
+            "attribution": "<a href=\"https://www.openstreetmap.org\" target=\"_blank\">OpenStreetMap</a>"
         }
     },
     "sprite": "mapbox://sprites/dandwal/ckcnerkje0kd61iroqja6pgv0/9jwb0xn8b7v9ua1qm4nfah37h",

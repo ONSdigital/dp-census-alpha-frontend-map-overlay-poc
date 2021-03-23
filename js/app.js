@@ -95,7 +95,7 @@ function addInteraction(overlayName) {
 mapboxgl.accessToken = 'pk.eyJ1IjoiZGFuZHdhbCIsImEiOiJja2JodjE3bnUwOTNvMnNwdmVpdWU2cXoxIn0.Zwhbvr7YGa2TAE4iNpV6aA';
 const map = new mapboxgl.Map({
     container: 'map',
-    style: './data/style.json',
+    style: './data/style2.json',
     center: [-1.2471735, 50.8625412],
     zoom: 12,
     maxZoom: 22,
